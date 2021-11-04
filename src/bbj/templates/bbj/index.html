@@ -1,0 +1,235 @@
+{% load static %}
+{% load rate%}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Welcome to BlackBitJack!</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{% static 'assets/Bitcoin-BTC.ico' %}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="{% static 'js/all.js' %}" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'css/styles2.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'css/styles3.css' %}" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <!--link href="css/styles.css" rel="stylesheet" /-->
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">                             
+                <a class="navbar-brand" href="#page-top"><img src="{% static 'assets/img/navbar-logo.gif' %}" alt="BlackBitJack" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#services">Сервис</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">О нас</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+                        <li class="nav-item" >
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" style="color:hsl(44, 96%, 45%);"><i>1 BTC = {%currency_rate%} $</i></a>
+                        </li>
+                        <li class="nav-item">
+                            <select class="btn btn-warning btn-sm" onchange="window.location.href = this.options[this.selectedIndex].value">
+                                <option value="/">RU</option>
+                                <option value="{% url 'eng' %}">ENG</option>
+
+                            </select>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Добро пожаловать к BlackBitJack Enternational!</div>
+                <div class="masthead-heading text-uppercase">Будущее уже наступило...</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Хочу знать больше</a>
+            </div>
+        </header>
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Сервис</h2>
+                    <h3 class="section-subheading text-muted">Нам доверяют миллионы...</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Быстро</h4>
+                        <p class="text-muted">У нас биткоин переводится за считанные минуты! Запросил - получил!</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Удобно</h4>
+                        <p class="text-muted">Телеграмм-бот BLACKBITJACK_LOCAL_BOT_24/7 доступенпо по всему миру в любое удобное для вас время!</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Под защитой</h4>
+                        <p class="text-muted">Все операции проводятся согласно службам Blockchain.com.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">О нас</h2>
+                    <h3 class="section-subheading text-muted">Мир не стоит на месте, будь в тренде.</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'assets/img/about/1.png' %}"  alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>МИР</h4>
+                                <h4 class="subheading">Работаем в нескольких странах</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Обмен криптовалют в Республике Беларусь/Российской Федерации/Грузии/Дубай.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'assets/img/about/2.png' %}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>РЕПУТАЦИЯ</h4>
+                                <h4 class="subheading">Нам доверяют</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Безупречная репутация проверенная людьми.</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'assets/img/about/3.jpg' %}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>УВЕРЕННОСТЬ</h4>
+                                <h4 class="subheading">Мы гарантируем</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Гибкая система скидок, надёжность и конфеденциальность</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'assets/img/about/4.jpg' %}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>РАЗВИТИЕ</h4>
+                                <h4 class="subheading">Всегда в тренде</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Приглашаем к международному сотрудничеству!</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>
+                                Будь 
+                                <br />
+                                частью нашей
+                                <br />
+                                истории!
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+      
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Наши контакты</h2>
+                    <h3 class="section-subheading text-muted">Весь мир в ваших руках...</h3>
+                </div>
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <div class="" id="submitSuccessMessage">
+                        <div class="text-center text-white mb-3">
+                      
+                            Наш бот в Telegram
+                            <br />
+                            <a href="https://t.me/BlackBitJackLocal_bot">BLACKBITJACK_LOCAL_BOT_24/7</a>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="" id="submitSuccessMessage">
+                        <div class="text-center text-white mb-3">
+                            Мы в localbitcoins.com
+                            <br />
+                            <a href="https://localbitcoins.com/accounts/profile/BLACKBITJACK/">BLACKBITJACK on LocalBitcoins.com</a>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="" id="submitSuccessMessage">
+                        <div class="text-center text-white mb-3">
+                      
+                            Связь с нами в Telegram
+                            <br />
+                            <a href="https://t.me/BELBITOK">BELBITOK</a>
+                            <br />
+                            <a href="https://t.me/BLACKBITJACK_LOCAL/">BLACKBITJACK_LOCAL</a>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="" id="submitSuccessMessage">
+                        <div class="text-center text-white mb-3">
+                            Наш офис
+                            <br />
+                            ГРУЗИЯ =)
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lgtext-lg-start">Copyright &copy; Developed by Yuri Shemetov for BlackBitJack 2021</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'js/scripts.js' %}"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    
+    </body>
+</html>
