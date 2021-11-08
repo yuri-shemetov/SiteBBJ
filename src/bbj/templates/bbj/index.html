@@ -23,7 +23,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">                             
-                <a class="navbar-brand" href="#page-top"><img src="{% static 'assets/img/navbar-logo.gif' %}" alt="BlackBitJack" /></a>
+                <a class="navbar-brand" href="#page-top"><img src="{% static 'assets/img/navbar-logo.png' %}" width="100%" height="100%" alt="BlackBitJack" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
@@ -51,7 +51,7 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">Добро пожаловать к BlackBitJack Enternational!</div>
+                <div class="masthead-subheading">Добро пожаловать к BlackBitJack International!</div>
                 <div class="masthead-heading text-uppercase">Будущее уже наступило...</div>
                 <a class="btn btn-primary btn-xl text-uppercase" href="#services">Хочу знать больше</a>
             </div>
@@ -61,7 +61,7 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Сервис</h2>
-                    <h3 class="section-subheading text-muted">Нам доверяют миллионы...</h3>
+                    <h3 class="section-subheading text-muted">Почему мы?</h3>
                 </div>
                 <div class="row text-center">
                     <div class="col-md-4">
@@ -69,7 +69,7 @@
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">Быстро</h4>
+                        <h4 class="my-3">Оперативно</h4>
                         <p class="text-muted">У нас биткоин переводится за считанные минуты! Запросил - получил!</p>
                     </div>
                     <div class="col-md-4">
@@ -77,15 +77,15 @@
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">Удобно</h4>
-                        <p class="text-muted">Телеграмм-бот BLACKBITJACK_LOCAL_BOT_24/7 доступенпо по всему миру в любое удобное для вас время!</p>
+                        <h4 class="my-3">Анонимно</h4>
+                        <p class="text-muted">Все транзакции анонимны!</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">Под защитой</h4>
+                        <h4 class="my-3">Надежно</h4>
                         <p class="text-muted">Все операции проводятся согласно службам Blockchain.com.</p>
                     </div>
                 </div>
@@ -107,7 +107,7 @@
                                 <h4>МИР</h4>
                                 <h4 class="subheading">Работаем в нескольких странах</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Обмен криптовалют в Республике Беларусь/Российской Федерации/Грузии/Дубай.</p></div>
+                            <div class="timeline-body"><p class="text-muted">Обмен криптовалют в Республике Беларусь/Российской Федерации/Грузии/ОАЭ.</p></div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
@@ -160,6 +160,7 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Наши контакты</h2>
+                    <br>
                     <h3 class="section-subheading text-muted">Весь мир в ваших руках...</h3>
                 </div>
                 <!-- * * * * * * * * * * * * * * *-->
@@ -173,11 +174,15 @@
                     <div class="" id="submitSuccessMessage">
                         <div class="text-center text-white mb-3">
                       
-                            Наш бот в Telegram
+                            Наш Telegram-бот
+                            <br>
                             <br />
-                            <a href="https://t.me/BlackBitJackLocal_bot">BLACKBITJACK_LOCAL_BOT_24/7</a>
+                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'assets/img/logos/tg.png' %}" width="30" height="30" alt="..." />
+                                <a href="https://t.me/BlackBitJackLocal_bot">BLACKBITJACK_LOCAL_BOT_24/7</a>
+                            </div>
                         </div>
                     </div>
+                    <br>
                     <br>
                     <br>
                     <div class="" id="submitSuccessMessage">
@@ -190,26 +195,25 @@
                     <br>
                     <br>
                     <br>
+                    <br>
                     <div class="" id="submitSuccessMessage">
                         <div class="text-center text-white mb-3">
                       
                             Связь с нами в Telegram
+                            <br>
                             <br />
-                            <a href="https://t.me/BELBITOK">BELBITOK</a>
+                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'assets/img/logos/tg.png' %}" width="30" height="30" alt="..." />
+                                <a href="https://t.me/BELBITOK">BELBITOK</a>
+                            <br>
                             <br />
-                            <a href="https://t.me/BLACKBITJACK_LOCAL/">BLACKBITJACK_LOCAL</a>
+                            <img class="rounded-circle img-fluid" src="{% static 'assets/img/logos/tg.png' %}" width="30" height="30" alt="..." />
+                                <a href="https://t.me/BLACKBITJACK_LOCAL/">BLACKBITJACK_LOCAL</a>
+                            </div>
                         </div>
                     </div>
                     <br>
                     <br>
-                    <br>
-                    <div class="" id="submitSuccessMessage">
-                        <div class="text-center text-white mb-3">
-                            Наш офис
-                            <br />
-                            ГРУЗИЯ =)
-                        </div>
-                    </div>
+
                 </form>
             </div>
         </section>
