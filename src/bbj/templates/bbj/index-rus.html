@@ -9,7 +9,7 @@
         <meta name="author" content="" />
         <title>Welcome to BlackBitJack!</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="{% static 'assets/Bitcoin-BTC.ico' %}" />
+        <link rel="icon" type="image/x-icon" href="{% static 'assets/favicon.ico' %}" />
         <!-- Font Awesome icons (free version)-->
         <script src="{% static 'js/all.js' %}" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -23,7 +23,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">                             
-                <a class="navbar-brand" href="#page-top"><img src="{% static 'assets/img/navbar-logo.png' %}" width="100%" height="100%" alt="BlackBitJack" /></a>
+                <a class="navbar-brand" href="#page-top"><img src="{% static 'assets/img/navbar-logo.png' %}" alt="BlackBitJack" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
@@ -38,8 +38,8 @@
                         </li>
                         <li class="nav-item">
                             <select class="btn btn-warning btn-sm" onchange="window.location.href = this.options[this.selectedIndex].value">
-                                <option value="/">RU</option>
-                                <option value="{% url 'eng' %}">ENG</option>
+                                <option value="{% url 'rus' %}">RU</option>
+                                <option value="/">ENG</option>
 
                             </select>
                         </li>
@@ -52,8 +52,8 @@
         <header class="masthead">
             <div class="container">
                 <div class="masthead-subheading">Добро пожаловать к BlackBitJack International!</div>
-                <div class="masthead-heading text-uppercase">Будущее уже наступило...</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Хочу знать больше</a>
+                <div class="masthead-heading text-uppercase">Будущее в твоих руках...</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Подробнее</a>
             </div>
         </header>
         <!-- Services-->
@@ -99,7 +99,7 @@
                             <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Оперативно</h4>
-                        <p class="text-muted">У нас биткоин переводится за считанные минуты! Запросил - получил!</p>
+                        <p class="text-muted">Обмен криптовалют происходит в обе стороны. Покупка/Продажа. </p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
@@ -115,7 +115,7 @@
                             <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Надежно</h4>
-                        <p class="text-muted">Все операции проводятся согласно службам Blockchain.com.</p>
+                        <p class="text-muted">Все сделки сопровождаются ссылочным сообщением на типовой Blockchain</p>
                     </div>
                 </div>
             </div>
@@ -189,68 +189,60 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Наши контакты</h2>
-                    <br>
-                    <h3 class="section-subheading text-muted">Весь мир в ваших руках...</h3>
-                </div>
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- * * SB Forms Contact Form * *-->
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- This form is pre-integrated with SB Forms.-->
-                <!-- To make this form functional, sign up at-->
-                <!-- https://startbootstrap.com/solution/contact-forms-->
-                <!-- to get an API token!-->
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                    <div class="" id="submitSuccessMessage">
-                        <div class="text-center text-white mb-3">
-                      
-                            Наш Telegram-бот
-                            <br>
-                            <br />
-                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'assets/img/logos/tg.png' %}" width="30" height="30" alt="..." />
-                                <a href="https://t.me/BlackBitJackLocal_bot">BLACKBITJACK_LOCAL_BOT_24/7</a>
-                            </div>
+                    <h3 class="section-subheading text-muted">Весь мир в твоих руках...</h3>
+                </div>              
+                    <div class="text-center text-white mb-3">
+                        TELEGRAM-боты:
+                        <br>
+                        <br>
+                        <p class="text-white">Республика Беларусь</p>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'assets/img/logos/tg.png' %}" width="30" height="30" alt="..." />
+                            <a href="https://t.me/BlackBitJackLocal_bot">BLACKBITJACK_LOCAL_BOT_24/7</a> 
                         </div>
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="" id="submitSuccessMessage">
-                        <div class="text-center text-white mb-3">
-                            Мы в localbitcoins.com
-                            <br />
-                            <a href="https://localbitcoins.com/accounts/profile/BLACKBITJACK/">BLACKBITJACK on LocalBitcoins.com</a>
+                        <br>
+                        <p class="text-white">Республика Грузия</p>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'assets/img/logos/tg.png' %}" width="30" height="30" alt="..." />
+                            <a href="https://t.me/BlackBitJackLocal_Ge_bot">BBJ_GE_BOT</a>
                         </div>
-                    </div>
+                    </div>        
                     <br>
+                    <div class="text-center text-white mb-3">
+                        МЫ В localbitcoins.com:
+                        <br>
+                        <br />
+                        <a href="https://localbitcoins.com/accounts/profile/BLACKBITJACK/">BLACKBITJACK on LocalBitcoins.com</a>
+                    </div>                    
                     <br>
-                    <br>
-                    <br>
-                    <div class="" id="submitSuccessMessage">
-                        <div class="text-center text-white mb-3">
-                      
-                            Связь с нами в Telegram
-                            <br>
-                            <br />
-                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'assets/img/logos/tg.png' %}" width="30" height="30" alt="..." />
-                                <a href="https://t.me/BELBITOK">BELBITOK</a>
-                            <br>
-                            <br />
-                            <img class="rounded-circle img-fluid" src="{% static 'assets/img/logos/tg.png' %}" width="30" height="30" alt="..." />
-                                <a href="https://t.me/BLACKBITJACK_LOCAL/">BLACKBITJACK_LOCAL</a>
-                            </div>
+                    <div class="text-center text-white mb-3">
+                    
+                        СВЯЗЬ С НАМИ В TELEGRAM:
+                        <br>
+                        <br />
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'assets/img/logos/tg.png' %}" width="30" height="30" alt="..." />
+                            <a href="https://t.me/BELBITOK">BELBITOK</a>
+                        <br>
+                        <br />
+                        <img class="rounded-circle img-fluid" src="{% static 'assets/img/logos/tg.png' %}" width="30" height="30" alt="..." />
+                            <a href="https://t.me/BLACKBITJACK_LOCAL/">BLACKBITJACK_LOCAL</a>
                         </div>
-                    </div>
+                    </div>                    
                     <br>
+                    <div class="text-center text-white mb-3">
+                    
+                        НАШ ОФИС:
+                        <br>
+                        <br />
+                        <p class="text-white">Республика Грузия, г. Батуми, ул. Руставели, 59</p>
+                    </div>                    
                     <br>
 
-                </form>
             </div>
         </section>
         <!-- Footer-->
         <footer class="footer py-4">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lgtext-lg-start">Copyright &copy; Developed by Yuri Shemetov for BlackBitJack 2021</div>
+                    <div class="col-lgtext-lg-start">Copyright &copy; Developed by Yuri Shemetov for BlackBitJack, 2021-2022</div>
                     </div>
                 </div>
             </div>
